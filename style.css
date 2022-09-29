@@ -1,0 +1,128 @@
+/* Full-sized desktop stylesheet */
+html {
+	background-image: url("images/rock_texture.jpg");
+	background-size: 1920px 1080px ;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(220, 220, 220, 0.5);
+	margin-bottom: 40px;
+}
+
+nav p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#wrapper {
+	border: solid;
+	border-width: 5px;
+	border-color: lightgrey;
+	border-radius: 50px;
+	min-width: 50%;
+	max-width: 80%;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	border: solid;
+	border-width: 2px;
+	border-radius: 30px;
+	border-color: lightgrey;
+	background-color: rgba(220, 220, 220, 0.5);
+	margin: 20px;
+	padding: 50px;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	color: lightgrey;
+	font-family: 'Georgia', serif;
+}
+
+h2 {
+	color: lightgrey;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: lighter;
+}
+
+p {
+	float: left;
+	width: auto;
+	color: lightgrey;
+	font-family: 'Helvetica', sans-serif;
+}
+
+li {
+	color: lightgrey;
+	font-family: 'Helvetica', sans-serif;
+}
+
+img {
+	min-width: 200px;
+	max-width: 300px;
+	border-radius: 30px;
+	margin: 10px;
+}
+
+.column {
+	width: 100%;
+	margin: 10px;
+}
+
+/* Windowed mode and tablet stylesheet */
+@media only screen and (max-width: 1000px) {
+	html {
+		background-image: url('images/rock_texture.jpg');
+		background-size: 960px 540px ;
+	}
+	
+	section {
+		padding: 30px; 
+	}
+	
+	h1 {
+		font-size: 22px;
+	}
+}
+
+/* Single-column and mobile stylesheet */
+@media only screen and (max-width: 800px) {
+	section {
+		flex-direction: column;
+	}
+	
+	section {
+		padding: 15px; 
+	}
+	
+	h1 {
+		font-size: 18px;
+	}
+	
+	.headshot {
+		margin: auto;
+		margin-bottom: 30px;
+	}
+}
