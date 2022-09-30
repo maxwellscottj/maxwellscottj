@@ -1,0 +1,9 @@
+let mocapJSON=[
+				{
+					"Title":"Mocap",
+					"TextBody":"Kinect hacks!",
+					"Images": [
+						{"url":"images/rock_texture.jpg"}
+					]
+				}
+			]
