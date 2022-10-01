@@ -37,25 +37,20 @@ nav p:hover {
 	background-color: red;
 }
 
-#navmenu {
-	width:100px;
-	height:100px;
-	margin: 20px;
-	border: 3px solid white;
-	border-radius: 10px;
-	display:none;
-	visibility:hidden;
-}
+
 
 .navdropdown {
 	width:75%;
 	display: none;
+	align-self: start;
 	align-items: start;
 	justify-content: center;
 	background-color: rgba(220, 220, 220, 0.5);
 	margin-bottom: 15px;
 	visibility: hidden;
 }
+
+
 
 #navdropdown.visible {
 	display: table;
@@ -70,11 +65,28 @@ nav p:hover {
 	background-color:red;
 }
 
+.navlabel {
+	display:none;
+	visibility: hidden;
+}
+
+#navmenu {
+	width:100px;
+	height:100px;
+	margin: 20px;
+	align-self: flex-start;
+	border: 3px solid white;
+	border-radius: 10px;
+	display:none;
+	visibility:hidden;
+}
+
 .contactpopup {
-	width:25%;
-	float: right;
+	width: 100%;
 	display: none;
+	align-self: center;
 	align-items: center;
+	margin-bottom: 20px;
 	justify-content: center;
 	background-color: rgba(220, 220, 220, 0.5);
 	visibility: hidden;
@@ -106,11 +118,6 @@ main {
 }
 
 main.wrapperFrame {
-}
-
-iframe {
-	width: 720px;
-	height: 480px;
 }
 
 .banner {
@@ -198,9 +205,14 @@ li {
 	font-family: 'Helvetica', sans-serif;
 }
 
+iframe {
+	width: 720px;
+	height: 480px;
+}
+
 .galleryItem {
 	width: 720px;
-	
+	height: 480px;
 }
 
 .headshot {
@@ -251,16 +263,38 @@ li {
 		min-width:100%;
 	}
 	
-	#navmenu {
-		visibility: visible;
-		display: inline-block;
-	}
-	
 	#navdropdown {
 		width:100%;
 		flex-direction: column;
 	}
 	
+	#navdropdown .column {
+		display: block;
+		height: auto;
+		width: auto;
+	}
+	
+	.navlabel {
+		display:block;
+		visibility:visible;
+	}
+
+	#navmenu {
+		visibility: visible;
+		display: inline-block;
+	}
+	
+	iframe {
+		width:480px;
+		height:380px;
+		max-width: calc(100% - 40px)
+	}
+	
+	.galleryItem {
+		width:480px;
+		height:380px;
+		max-width: calc(100% - 40px)
+	}
 	
 }
 
@@ -285,5 +319,19 @@ li {
 	.headshot {
 		margin: auto;
 		margin-bottom: 30px;
+	}
+	
+	iframe {
+		max-width:480px;
+		max-height:380px;
+		min-width:380px;
+		min-height:240px;
+	}
+	
+	.galleryItem {
+		max-width:480px;
+		max-height:380px;
+		min-width:380px;
+		min-height:240px;
 	}
 }

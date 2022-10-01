@@ -2,10 +2,14 @@ var postCategory;
 
 function clearPosts() {
 	postCategory = '';
+	var postsToClear = [];
 	for (let i = 0; i < wrapper.children.length; i++) {
 		if (!wrapper.children[i].classList.contains('banner')) {
-				wrapper.removeChild(wrapper.children[i])
+			postsToClear.push(wrapper.children[i]);
 		}
+	}
+	for (let i = 0; i < postsToClear.length; i++) {
+		wrapper.removeChild(postsToClear[i])
 	}
 }
 
@@ -56,6 +60,8 @@ function generatePost(posts) {
 
 function bannerSwap(newBanner) {
 	var bannerURL;
+	var categoryCache = postCategory;
+	clearPosts();
 	switch (newBanner) {
 		case 'Code':
 			bannerURL = 'images/CodeBanner.png'
@@ -69,16 +75,14 @@ function bannerSwap(newBanner) {
 	}
 	mainBanner.parentNode.removeChild(mainBanner);
 	var newBanner = document.createElement('img');
-	newBanner.id = 'mainBanner'
+	newBanner.setAttribute('id','mainBanner');
 	newBanner.classList.add('banner')
 	newBanner.src = bannerURL;
 	wrapper.appendChild(newBanner);
 	mainBanner = newBanner;
+	generatePost(categoryCache);
 	console.log(mainBanner.src)
-	if (postCategory) {
-		clearPosts();
-		generatePost(postCategory);
-	}
+	
 }
 
 function openDropDown() {
@@ -101,8 +105,6 @@ function toggleDropDown() {
 function openContact() {
 	closeDropDown();
 	contactpopup.classList.add('visible')
-	nav.classList.remove('minimized')
-	frameBio();
 }
 
 function closeContact(){
