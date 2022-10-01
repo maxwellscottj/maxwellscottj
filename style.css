@@ -302,6 +302,8 @@ footer {
 h1 {
 	margin: 50px;
 	padding: 30px;
+	padding-left: 80px;
+	padding-right: 80px;
 	font-size: 48px;
 	text-align: center;
 	font-family: 'Palatino', serif;
