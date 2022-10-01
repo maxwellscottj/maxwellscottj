@@ -71,7 +71,8 @@ nav p:hover {
 
 .navdropdown .column {
 	margin: 0px;
-	border: 1px solid dimgrey;
+	border: 1px solid aliceblue;
+	border-top:0px;
 	padding: 20px;
 	display: table-cell;
 	height: auto;

@@ -155,15 +155,26 @@ function toggleContact(){
 	}
 }
 
+var cachedCategory;
+
 function frameWrapper() {
 	bio.classList.add('minimized')
 	wrapper.classList.remove('minimized')
 	main.classList.add('wrapperFrame')
+	if (cachedCategory) {
+		generatePost(cachedCategory);
+		cachedCategory = false;
+	}
 }
 
 function frameBio() {
 	bio.classList.remove('minimized')
 	wrapper.classList.add('minimized')
 	main.classList.remove('wrapperFrame')
+	cachedCategory = postCategory;
 	clearPosts();
+}
+
+function clearPostCache() {
+	cachedCategory = false;
 }
