@@ -40,7 +40,7 @@ nav p {
 }
 
 nav p:hover {
-	background-color: aliceblue;
+	background-color: lightcyan;
 	font-weight: bold;
 	text-decoration: underline;
 }
@@ -134,6 +134,29 @@ nav p:hover {
 	margin: 20px;
 }
 
+.contactcard {
+	display:flex;
+	justify-content:start;
+	align-items:space-between;
+	margin: 5px;
+	border: 3px solid darkgrey;
+	border-radius: 5px;
+}
+
+.contacticon {
+	align-self:start;
+	margin: 15px;
+	width: 50px;
+	height: 50px;
+	border: 2px solid aliceblue;
+}
+
+.contactcard p {
+	align-self:end;
+	margin: 10px;
+	align-self:end;
+}
+
 .speechBubble {
 	z-index:initial;
 }
@@ -203,7 +226,10 @@ main.wrapperFrame {
 	height: 650px;
 	margin: 20px;
 	overflow-y:scroll;
+	border: 3px solid lightcyan;
+	border-radius: 7px;
 }
+
 .minimized {
 	order:2;
 	display:none;
@@ -227,12 +253,16 @@ main.wrapperFrame {
 	visibility: visible;
 }
 
+#bio section {
+	border-color:lightcyan;
+}
+
 section {
 	display: flex;
 	flex-direction: column;
 	border: solid;
 	border-width: 2px;
-	border-radius: 30px;
+	border-radius: 15px;
 	border-color: lightgrey;
 	background-color: rgba(220, 220, 220, 0.5);
 	margin: 20px;
@@ -248,14 +278,16 @@ footer {
 h1 {
 	margin: 50px;
 	font-size: 48px;
-	text-align:center;
-	color: lightgrey;
+	text-align: center;
 	font-family: 'Georgia', serif;
 	color: aliceblue;
 }
 
+h1:hover {
+	color: lightcyan;
+}
 h2 {
-	color: lightgrey;
+	color: lightcyan;
 	font-family: 'Helvetica', sans-serif;
 	font-weight: lighter;
 }
@@ -273,7 +305,7 @@ h2 {
 	font-family: 'Georgia', serif;
 	font-style: italic;
 	font-weight: bold;
-	color: aliceblue;
+	color: lightcyan;
 }
 
 p {
@@ -307,6 +339,7 @@ iframe {
 
 .headshot {
 	border-radius: 100%;
+	border: 3px solid orange;
 	margin: 10px;
 }
 
