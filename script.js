@@ -1,6 +1,7 @@
 var postCategory;
 
 function clearPosts() {
+	postCategory = '';
 	for (let i = 0; i < wrapper.children.length; i++) {
 		if (!wrapper.children[i].classList.contains('banner')) {
 				wrapper.removeChild(wrapper.children[i])
@@ -9,8 +10,8 @@ function clearPosts() {
 }
 
 function generatePost(posts) {
-	postCategory = posts;
 	clearPosts()
+	postCategory = posts;
 	for (let i = 0; i < posts.length; i++) {
 		var parsedPost = posts[i];
 		console.log(parsedPost)
