@@ -97,8 +97,8 @@ nav p:hover {
 }
 
 #navmenu {
-	width:100px;
-	height:100px;
+	width:75px;
+	height:75px;
 	margin: 20px;
 	//align-self: flex-start;
 	border: 3px solid white;
@@ -108,8 +108,8 @@ nav p:hover {
 }
 
 #contactbutton {
-	width:100px;
-	height:100px;
+	width:75px;
+	height:75px;
 	margin: 20px;
 	//align-self: flex-end;
 	border: 3px solid white;
@@ -213,7 +213,7 @@ main.wrapperFrame {
 	border-radius: 15px;
 	object-fit: cover;
 	margin: 10px;
-	height: 200px;
+	height: 400px;
 	width: calc(100% - 20px);
 	order:0
 }
@@ -235,7 +235,7 @@ main.wrapperFrame {
 	height: 650px;
 	margin: 20px;
 	overflow-y:scroll;
-	border: 3px solid lightcyan;
+	border: 3px solid lightgrey;
 	border-radius: 7px;
 }
 
@@ -279,7 +279,7 @@ section {
 	border: solid;
 	border-width: 2px;
 	border-radius: 15px;
-	border-color: lightgrey;
+	border-color: lightcyan;
 	background-color: rgba(100, 100, 100, 0.5);
 	margin: 20px;
 	padding: 20px;
@@ -287,6 +287,10 @@ section {
  
 section p {
 	width: 80%;
+}
+
+.scrollBox section p {
+	width: calc(80%+40px);
 }
  
 footer {
@@ -411,6 +415,10 @@ iframe {
 		width: calc(100% - 40px);
 	}
 	
+	.banner {
+		height:200px;
+	}
+	
 	.scrollBox {
 		height:1200px;
 	}
@@ -455,6 +463,10 @@ iframe {
 		width: 90%;
 	}
 	
+	.scrollBox section p {
+		width: calc(90% - 20px);
+	}
+	
 	.navlabel {
 		font-size: 24px;
 		display:block;
@@ -477,14 +489,14 @@ iframe {
 	}
 	
 	iframe {
-		width:480px;
-		height:380px;
+		width:90%;
+		height:480px;
 		max-width: calc(100% - 40px)
 	}
 	
 	.galleryItem {
-		width:480px;
-		height:380px;
+		width:90%;
+		height:90%;
 		max-width: calc(100% - 40px)
 	}
 	
