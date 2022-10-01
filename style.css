@@ -71,9 +71,14 @@ nav p:hover {
 	background-color: aliceblue;
 }
 
+.navdropdown hr {
+	color:grey;
+}
+
 .navlabel {
 	display:none;
 	visibility: hidden;
+	font-weight: bold;
 }
 
 #controlbar {
@@ -181,6 +186,10 @@ main.wrapperFrame {
 	order:0
 }
 
+#mainbanner {
+	position:fixed;
+}
+
 #wrapper {
 	border: 3px solid orange;
 	border-radius: 30px;
@@ -188,9 +197,13 @@ main.wrapperFrame {
 	margin: 10px;
 	order:1;
 	align-self: start;
-	
 }
 
+.scrollBox {
+	height: 650px;
+	margin: 20px;
+	overflow-y:scroll;
+}
 .minimized {
 	order:2;
 	display:none;
@@ -259,6 +272,7 @@ h2 {
 	font-size: 16px;
 	font-family: 'Georgia', serif;
 	font-style: italic;
+	font-weight: bold;
 	color: aliceblue;
 }
 
@@ -310,11 +324,16 @@ iframe {
 	}
 	
 	h1 {
-		font-size: 30px;
+		font-size: 40px;
 	}
 	
 	h2 {
 		font-size: 26px;
+	}
+	
+	.subtitle p {
+		font-size: 18px;
+		padding: 10px;
 	}
 	
 	nav, nav.minimized {
@@ -329,6 +348,10 @@ iframe {
 	
 	#wrapper {
 		width: calc(100% - 40px);
+	}
+	
+	.scrollBox {
+		height:900px;
 	}
 	
 	#bio {
@@ -402,6 +425,10 @@ iframe {
 	
 	h2 {
 		font-size: 22px;
+	}
+	
+	.subtitle {
+		display:none;
 	}
 	
 	.headshot {

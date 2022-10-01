@@ -16,6 +16,8 @@ function clearPosts() {
 function generatePost(posts) {
 	clearPosts()
 	postCategory = posts;
+	var newScrollBox = document.createElement('div')
+	newScrollBox.classList.add('scrollBox')
 	for (let i = 0; i < posts.length; i++) {
 		var parsedPost = posts[i];
 		console.log(parsedPost)
@@ -53,9 +55,11 @@ function generatePost(posts) {
 				}
 			}
 		}
-		wrapper.appendChild(newSection);
+		newScrollBox.appendChild(newSection);
 	}
-	
+	if (posts){
+		wrapper.appendChild(newScrollBox);
+	}
 }
 
 function bannerSwap(newBanner) {
