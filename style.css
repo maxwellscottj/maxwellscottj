@@ -28,16 +28,14 @@ nav.minimized {
 nav p {
 	width: 25%;
 	text-align:center;
-	padding-left: 20px;
-	padding-right: 20px;
+	margin: 0px;
+	padding: 20px;
 }
 
 nav p:hover {
 	font-weight: bold;
 	background-color: red;
 }
-
-
 
 .navdropdown {
 	width:75%;
@@ -50,19 +48,19 @@ nav p:hover {
 	visibility: hidden;
 }
 
-
-
 #navdropdown.visible {
 	display: table;
 }
 
 .navdropdown .column {
+	margin: 0px;
+	padding: 20px;
 	display: table-cell;
 	height: auto;
 }
 
 .navdropdown .column:hover {
-	background-color:red;
+	background-color:darkred;
 }
 
 .navlabel {
@@ -134,7 +132,7 @@ main.wrapperFrame {
 	border-width: 5px;
 	border-color: lightgrey;
 	border-radius: 50px;
-	width: calc(75% - 40px);
+	width: 75%;
 	margin: 20px;
 	order:1;
 	align-self: start;
@@ -160,7 +158,7 @@ main.wrapperFrame {
 
 #bio.minimized {
 	width:25%;
-	margin: 20px;
+	//margin: 20px;
 	display: flex;
 	visibility: visible;
 }
@@ -234,11 +232,11 @@ iframe {
 	}
 	
 	h1 {
-		font-size: 22px;
+		font-size: 30px;
 	}
 	
 	h2 {
-		font-size: 18px;
+		font-size: 26px;
 	}
 	
 	nav, nav.minimized {
@@ -274,7 +272,12 @@ iframe {
 		width: auto;
 	}
 	
+	#navdropdown .column p a {
+		font-size: 24px;
+	} 
+	
 	.navlabel {
+		font-size: 24px;
 		display:block;
 		visibility:visible;
 	}
@@ -309,11 +312,11 @@ iframe {
 	}
 	
 	h1 {
-		font-size: 18px;
+		font-size: 26px;
 	}
 	
 	h2 {
-		font-size: 16px;
+		font-size: 22px;
 	}
 	
 	.headshot {
