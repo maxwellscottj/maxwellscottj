@@ -68,11 +68,28 @@ nav p:hover {
 	visibility: hidden;
 }
 
+#controlbar {
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+}
+
 #navmenu {
 	width:100px;
 	height:100px;
 	margin: 20px;
-	align-self: flex-start;
+	//align-self: flex-start;
+	border: 3px solid white;
+	border-radius: 10px;
+	display:none;
+	visibility:hidden;
+}
+
+#contactbutton {
+	width:100px;
+	height:100px;
+	margin: 20px;
+	//align-self: flex-end;
 	border: 3px solid white;
 	border-radius: 10px;
 	display:none;
@@ -80,14 +97,43 @@ nav p:hover {
 }
 
 .contactpopup {
-	width: 100%;
+	width: calc(100% - 50px);
 	display: none;
 	align-self: center;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-top: -30px;
+	margin-bottom: 45px;
 	justify-content: center;
-	background-color: rgba(220, 220, 220, 0.5);
+	background-color: grey;
 	visibility: hidden;
+	position: relative;
+	border: 2px solid lightgrey;
+	border-radius: 10px;
+	z-index:10;
+}
+
+.contactpopup.visible {
+	display:block;
+}
+
+#contactpopup p {
+	width: 100%;
+	margin: 20px;
+}
+
+.speechBubble {
+	z-index:initial;
+}
+
+.pointerdiv {
+	background-color: darkgrey;
+	margin: auto;
+	transform: translate(25px,25px) rotate(45deg) ;
+	align-self: center;
+	height: 50px;
+	width: 50px;
+	position: relative;
+	z-index:-1;
 }
 
 .visible {
@@ -158,7 +204,6 @@ main.wrapperFrame {
 
 #bio.minimized {
 	width:25%;
-	//margin: 20px;
 	display: flex;
 	visibility: visible;
 }
@@ -272,9 +317,9 @@ iframe {
 		width: auto;
 	}
 	
-	#navdropdown .column p a {
+	p a {
 		font-size: 24px;
-	} 
+	}
 	
 	.navlabel {
 		font-size: 24px;
@@ -284,7 +329,12 @@ iframe {
 
 	#navmenu {
 		visibility: visible;
-		display: inline-block;
+		display: block;
+	}
+	
+	#contactbutton {
+		visibility: visible;
+		display: block;
 	}
 	
 	iframe {

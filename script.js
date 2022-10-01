@@ -102,14 +102,27 @@ function toggleDropDown() {
 	nav.classList.toggle('minimized')
 }
 
+var contactOpened;
+
 function openContact() {
+	contactOpened = true;
 	closeDropDown();
 	contactpopup.classList.add('visible')
 }
 
 function closeContact(){
+	contactOpened = false;
 	contactpopup.classList.remove('visible')
 	nav.classList.add('minimized')
+}
+
+function toggleContact(){
+	if (contactOpened) {
+		closeContact();
+	} else {
+		openContact();
+		frameBio();
+	}
 }
 
 function frameWrapper() {
