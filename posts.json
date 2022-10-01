@@ -3,6 +3,25 @@ let mocapJSON=[
 					"Title":"Mocap",
 					"TextBody":"Kinect hacks!",
 					"Images": [
+						{
+							"url":"images/rock_texture.jpg",
+							"alt": "A rock texture",
+							"caption":"Kinect rocks!"
+						}
+					],
+					"Videos": [
+						{
+							"url":"https://www.youtube.com/embed/_qF58MhR_rM",
+							"alt": "A rock texture",
+							"caption":"Skyknight's flight demo!"
+						}
+					]
+				},
+				{
+					"Title":"Mocap",
+					"TextBody":"Kinect hacks!",
+					"Images": [
+						{"url":"images/rock_texture.jpg"},
 						{"url":"images/rock_texture.jpg"}
 					]
 				}
