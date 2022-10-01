@@ -21,7 +21,12 @@ nav {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(220, 220, 220, 0.5);
+	background-color: rgba(100, 100, 100, 0.67);
+	border: 2px solid darkgrey;
+}
+
+nav:hover {
+	border-color: aliceblue;
 }
 
 nav.minimized {
@@ -51,9 +56,11 @@ nav p:hover {
 	align-self: start;
 	align-items: start;
 	justify-content: center;
-	background-color: rgba(220, 220, 220, 0.5);
+	background-color: rgb(169,169,169,0.67);
 	margin-bottom: 15px;
 	visibility: hidden;
+	border: 5px solid aliceblue;
+	border-top:0px;
 }
 
 #navdropdown.visible {
@@ -73,6 +80,7 @@ nav p:hover {
 
 .navdropdown hr {
 	color:grey;
+	display:none;
 }
 
 .navlabel {
@@ -136,15 +144,14 @@ nav p:hover {
 
 .contactcard {
 	display:flex;
-	justify-content:start;
-	align-items:space-between;
+	justify-content:flex-start;
+	align-items:center;
 	margin: 5px;
 	border: 3px solid darkgrey;
 	border-radius: 5px;
 }
 
 .contacticon {
-	align-self:start;
 	margin: 15px;
 	width: 50px;
 	height: 50px;
@@ -152,7 +159,6 @@ nav p:hover {
 }
 
 .contactcard p {
-	align-self:end;
 	margin: 10px;
 	align-self:end;
 }
@@ -217,7 +223,7 @@ main.wrapperFrame {
 	border: 3px solid orange;
 	border-radius: 30px;
 	width: 75%;
-	margin: 10px;
+	margin: 20px;
 	order:1;
 	align-self: start;
 }
@@ -255,20 +261,27 @@ main.wrapperFrame {
 
 #bio section {
 	border-color:lightcyan;
+	margin: 20px;
 }
 
 section {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	border: solid;
 	border-width: 2px;
 	border-radius: 15px;
 	border-color: lightgrey;
-	background-color: rgba(220, 220, 220, 0.5);
+	background-color: rgba(100, 100, 100, 0.5);
 	margin: 20px;
 	padding: 20px;
 }
-
+ 
+section p {
+	width: 80%;
+}
+ 
 footer {
 	display: flex;
 	align-items: center;
@@ -277,19 +290,24 @@ footer {
 
 h1 {
 	margin: 50px;
+	padding: 30px;
 	font-size: 48px;
 	text-align: center;
-	font-family: 'Georgia', serif;
+	font-family: 'Palatino', serif;
+	font-style: italic;
 	color: aliceblue;
+	border: 5px solid orange;
+	border-radius: 15px;
 }
 
 h1:hover {
 	color: lightcyan;
 }
+
 h2 {
 	color: lightcyan;
 	font-family: 'Helvetica', sans-serif;
-	font-weight: lighter;
+	font-weight: bold;
 }
 
 .subtitle {
@@ -301,20 +319,21 @@ h2 {
 
 .subtitle p {
 	text-align:center;
-	font-size: 16px;
-	font-family: 'Georgia', serif;
+	font-size: 20px;
+	font-family: 'Palatino', serif;
 	font-style: italic;
 	font-weight: bold;
-	color: lightcyan;
+	color: aliceblue;
 }
 
 p {
 	width: 100%;
-	color: lightgrey;
+	color: white;
 	font-family: 'Helvetica', sans-serif;
 }
 
 a {
+	font-weight:bold;
 	color: orange;
 }
 
@@ -395,10 +414,12 @@ iframe {
 		min-width:100%;
 	}
 	
-	#navdropdown {
+	.navdropdown {
 		margin: 20px;
 		width:calc(100% - 40px);
 		flex-direction: column;
+		border:3px solid aliceblue;
+		border-radius: 7px;	
 	}
 	
 	#navdropdown .column {
@@ -407,16 +428,29 @@ iframe {
 		width: auto;
 	}
 	
-	a {
-		font-size: 24px;
-		
+	.navdropdown hr {
+		color:grey;
+		display:block;
 	}
 	
+	a {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 18px;
+		font-weight: bold;
+	}
 	.navlabel {
 		font-size: 24px;
 		display:block;
 		visibility:visible;
 	}
+	
+	#navdropdown .column:hover .navlabel {
+		color:grey;
+	}
+
 
 	#navmenu {
 		visibility: visible;
