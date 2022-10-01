@@ -97,6 +97,7 @@ function openDropDown() {
 		dropDownOpened = true;
 		navdropdown.classList.add('visible')
 		nav.classList.remove('minimized')
+		navmenu.classList.add('active');
 		frameWrapper()
 	}
 }
@@ -105,6 +106,7 @@ function closeDropDown() {
 	dropDownOpened = false;
 	navdropdown.classList.remove('visible')
 	nav.classList.add('minimized')
+	navmenu.classList.remove('active')
 }
 
 function tryCloseDropDown() {
@@ -134,12 +136,14 @@ function openContact() {
 	closeDropDown();
 	contactOpened = true;
 	contactpopup.classList.add('visible')
+	contactbutton.classList.add('active')
 }
 
 function closeContact(){
 	contactOpened = false;
 	contactpopup.classList.remove('visible')
 	nav.classList.add('minimized')
+	contactbutton.classList.remove('active')
 }
 
 function toggleContact(){

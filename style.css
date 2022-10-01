@@ -111,6 +111,16 @@ nav p:hover {
 	visibility:hidden;
 }
 
+#navmenu:hover {
+	background-image: url(images/menubutton_active.png);
+	border-color: aliceblue;
+}
+
+#navmenu.active {
+	background-image: url(images/menubutton_active.png);
+	transform: rotate(90deg);
+}
+
 #contactbutton {
 	background-image: url(images/contact.png);
 	width:75px;
@@ -120,6 +130,15 @@ nav p:hover {
 	border-radius: 10px;
 	display:none;
 	visibility:hidden;
+}
+
+#contactbutton:hover {
+	background-image: url(images/contact_hovered.png);
+	border-color: aliceblue;
+}
+
+#contactbutton.active {
+	background-image: url(images/contact_clicked.png);
 }
 
 .contactpopup {
@@ -294,8 +313,9 @@ section p {
 	width: 80%;
 }
 
-.scrollBox section p {
-	width: calc(80% + 40px);
+.scrollBox section {
+	margin: 10px;
+	padding: 10px;
 }
  
 footer {
@@ -461,12 +481,11 @@ iframe {
 	}
 	
 	a {
-		font-size: 24px;
+		font-size: 30px;
 	}
 
 	p {
-		font-size: 24px;
-		font-weight: bold;
+		font-size: 30px;
 	}
 	
 	section p {
@@ -478,7 +497,7 @@ iframe {
 	}
 	
 	.navlabel {
-		font-size: 24px;
+		font-size: 34px;
 		display:block;
 		visibility:visible;
 	}
