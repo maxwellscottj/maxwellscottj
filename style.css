@@ -19,7 +19,7 @@ header hr {
 
 nav {
 	display: flex;
-	width: 100%;
+	width: calc(100% - 3px);
 	align-items: center;
 	justify-content: center;
 	background-color: rgba(100, 100, 100, 0.67);
@@ -46,7 +46,8 @@ nav p {
 }
 
 nav p:hover {
-	background-color: lightcyan;
+	color:dimgrey;
+	background-color: orange;
 	font-weight: bold;
 	text-decoration: underline;
 }
@@ -70,6 +71,7 @@ nav p:hover {
 
 .navdropdown .column {
 	margin: 0px;
+	border: 1px solid dimgrey;
 	padding: 20px;
 	display: table-cell;
 	height: auto;
@@ -77,6 +79,7 @@ nav p:hover {
 
 .navdropdown .column:hover {
 	background-color: aliceblue;
+	border: none;
 }
 
 .navdropdown hr {
@@ -212,9 +215,9 @@ main.wrapperFrame {
 .banner {
 	border-radius: 15px;
 	object-fit: cover;
-	margin: 10px;
+	margin: 20px;
 	height: 400px;
-	width: calc(100% - 20px);
+	width: calc(100% - 40px);
 	order:0
 }
 
@@ -234,6 +237,7 @@ main.wrapperFrame {
 .scrollBox {
 	height: 650px;
 	margin: 20px;
+	margin-top: 0px;
 	overflow-y:scroll;
 	border: 3px solid lightgrey;
 	border-radius: 7px;
@@ -290,7 +294,7 @@ section p {
 }
 
 .scrollBox section p {
-	width: calc(80%+40px);
+	width: calc(80% + 40px);
 }
  
 footer {
@@ -421,7 +425,7 @@ iframe {
 	}
 	
 	.banner {
-		height:200px;
+		height:300px;
 	}
 	
 	.scrollBox {
@@ -469,7 +473,7 @@ iframe {
 	}
 	
 	.scrollBox section p {
-		width: calc(90% - 20px);
+		width: calc(90% - 40px);
 	}
 	
 	.navlabel {
@@ -511,10 +515,11 @@ iframe {
 @media only screen and (max-width: 800px) {
 	section {
 		flex-direction: column;
-	}
-	
-	section {
 		padding: 15px; 
+	}
+
+	.banner {
+		height:200px;
 	}
 	
 	h1 {
