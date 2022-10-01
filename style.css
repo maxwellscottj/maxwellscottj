@@ -38,8 +38,8 @@ nav p:hover {
 }
 
 #navmenu {
-	width:50px;
-	height:50px;
+	width:100px;
+	height:100px;
 	margin: 20px;
 	border: 3px solid white;
 	border-radius: 10px;
