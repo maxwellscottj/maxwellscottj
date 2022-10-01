@@ -150,10 +150,10 @@ nav p:hover {
 	margin-top: -30px;
 	margin-bottom: 45px;
 	justify-content: center;
-	background-color: grey;
+	background-color: darkgrey;
 	visibility: hidden;
 	position: relative;
-	border: 3px dashed orange;
+	border: 3px solid orange;
 	border-radius: 10px;
 	z-index:10;
 }
@@ -162,30 +162,43 @@ nav p:hover {
 	display:block;
 }
 
-#contactpopup p {
+.contactcard {
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	margin: 5px;
+	background-color: dimgrey;
+	border: 3px solid grey;
+	border-radius: 7px;
+}
+
+.contactcard:hover {
+	border-color: aliceblue;
+}
+
+.contactcard:hover p a {
+	color: lightcyan;
+}
+
+.contacticon {
+	align-self:flex-start;
+	display:block;
+	margin: 15px;
+	width: 50px;
+	height: 50px;
+}
+
+.contactcard p {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 26px;
 	width: 100%;
 	margin: 20px;
 }
 
-.contactcard {
-	display:flex;
-	justify-content:flex-start;
-	align-items:center;
-	margin: 5px;
-	border: 3px solid darkgrey;
-	border-radius: 5px;
-}
-
-.contacticon {
-	margin: 15px;
-	width: 50px;
-	height: 50px;
-	border: 2px solid aliceblue;
-}
-
-.contactcard p {
-	margin: 10px;
-	align-self:end;
+.contactcard p a {
+	text-decoration:none;
 }
 
 .speechBubble {
@@ -195,7 +208,7 @@ nav p:hover {
 .pointerdiv {
 	background-color: darkgrey;
 	margin: auto;
-	transform: translate(-25px,25px) rotate(45deg) ;
+	transform: translate(-25px,30px) rotate(45deg) ;
 	align-self: center;
 	height: 50px;
 	width: 50px;
@@ -516,6 +529,11 @@ iframe {
 	#contactbutton {
 		visibility: visible;
 		display: block;
+	}
+	
+	.contacticon {
+		height: 75px;
+		width: 75px;
 	}
 	
 	iframe {
