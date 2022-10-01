@@ -100,22 +100,23 @@ nav p:hover {
 }
 
 #navmenu {
+	background-image: url(images/menubutton.png);
 	width:75px;
 	height:75px;
 	margin: 20px;
 	//align-self: flex-start;
-	border: 3px solid white;
+	border: 3px solid orange;
 	border-radius: 10px;
 	display:none;
 	visibility:hidden;
 }
 
 #contactbutton {
+	background-image: url(images/contact.png);
 	width:75px;
 	height:75px;
 	margin: 20px;
-	//align-self: flex-end;
-	border: 3px solid white;
+	border: 3px solid orange;
 	border-radius: 10px;
 	display:none;
 	visibility:hidden;
