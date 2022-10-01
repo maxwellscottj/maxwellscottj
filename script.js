@@ -85,28 +85,50 @@ function bannerSwap(newBanner) {
 	
 }
 
+var dropDownOpened;
+
 function openDropDown() {
-	closeContact()
-	navdropdown.classList.add('visible')
-	nav.classList.remove('minimized')
-	frameWrapper()
+	if (!dropDownOpened) {
+		closeContact()
+		dropDownOpened = true;
+		navdropdown.classList.add('visible')
+		nav.classList.remove('minimized')
+		frameWrapper()
+	}
 }
 
 function closeDropDown() {
+	dropDownOpened = false;
 	navdropdown.classList.remove('visible')
 	nav.classList.add('minimized')
 }
 
+function tryCloseDropDown() {
+	dropDownOpened = false;
+	setTimeOut(function(){
+		if (!dropDownOpened) {
+			closeDropDown();
+		}
+	},1);
+}
+
+function interruptCloseDropDown() {
+	dropDownOpened = true;
+}
+
 function toggleDropDown() {
-	navdropdown.classList.toggle('visible')
-	nav.classList.toggle('minimized')
+	if(dropDownOpened){
+		closeDropDown();
+	} else {
+		openDropDown();
+	}
 }
 
 var contactOpened;
 
 function openContact() {
-	contactOpened = true;
 	closeDropDown();
+	contactOpened = true;
 	contactpopup.classList.add('visible')
 }
 

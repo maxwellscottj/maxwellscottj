@@ -9,13 +9,20 @@
 
 <body>
 	<header>
-		<h1>Scott Maxwell</h1>
-		<h2>Unreal Engine Developer, Full-stack Web Developer, Animator, 2D/3D Artist & Motion Capture Avateer</h2>
+		<h1 onclick='closeDropDown(), frameBio()' >Scott Maxwell's Personal Page</h1>
+		<hr>
+		<h2 class='subtitle'>
+			<p>Full-Stack Web Developer</p>
+			<p>Unreal Engine Developer</p>
+			<p>2D/3D Artist</p>
+			<p>Animator</p>
+			<p>Motion Capture Avateer</p>
+		</h2>
 		<div id='controlbar'>
 			<div id='navmenu' onclick='toggleDropDown()'></div>
 			<div id='contactbutton' onclick='toggleContact()'></div>
 		</div>
-		<nav id='nav' class='minimized' onmouseenter='openDropDown()'>
+		<nav id='nav' class='minimized'>
 			<p onmouseenter='openDropDown()'>Code</p>
 			<p onmouseenter='openDropDown()'>2D</p>
 			<p onmouseenter='openDropDown()'>3D</p>
@@ -55,6 +62,9 @@
 				<div id='speechBubble'>
 					<p><a href="#">Discord</a></p>
 					<p><a href="#">Email</a></p>
+					<p><a href="#">Fiverr</a></p>
+					<p><a href="#">LinkedIn</a></p>
+					<p><a href="#">Youtube</a></p>
 					<div class='pointerdiv'></div>
 				</div>
 			</div><!-- end contact popup div-->

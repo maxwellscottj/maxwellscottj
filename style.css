@@ -11,6 +11,11 @@ header {
 	justify-content: center;
 }
 
+header hr {
+	width: 100%;
+	color:orange;
+}
+
 nav {
 	display: flex;
 	width: 100%;
@@ -30,11 +35,14 @@ nav p {
 	text-align:center;
 	margin: 0px;
 	padding: 20px;
+	font-size: 24px;
+	color: orange;
 }
 
 nav p:hover {
+	background-color: aliceblue;
 	font-weight: bold;
-	background-color: red;
+	text-decoration: underline;
 }
 
 .navdropdown {
@@ -60,7 +68,7 @@ nav p:hover {
 }
 
 .navdropdown .column:hover {
-	background-color:darkred;
+	background-color: aliceblue;
 }
 
 .navlabel {
@@ -107,7 +115,7 @@ nav p:hover {
 	background-color: grey;
 	visibility: hidden;
 	position: relative;
-	border: 2px solid lightgrey;
+	border: 2px dashed orange;
 	border-radius: 10px;
 	z-index:10;
 }
@@ -165,21 +173,19 @@ main.wrapperFrame {
 }
 
 .banner {
-	border-radius: 20px;
+	border-radius: 15px;
 	object-fit: cover;
-	margin: 20px;
+	margin: 10px;
 	height: 200px;
-	width: calc(100% - 40px);
+	width: calc(100% - 20px);
 	order:0
 }
 
 #wrapper {
-	border: solid;
-	border-width: 5px;
-	border-color: lightgrey;
-	border-radius: 50px;
+	border: 3px solid orange;
+	border-radius: 30px;
 	width: 75%;
-	margin: 20px;
+	margin: 10px;
 	order:1;
 	align-self: start;
 	
@@ -217,7 +223,7 @@ section {
 	border-color: lightgrey;
 	background-color: rgba(220, 220, 220, 0.5);
 	margin: 20px;
-	padding: 50px;
+	padding: 20px;
 }
 
 footer {
@@ -227,8 +233,12 @@ footer {
 }
 
 h1 {
+	margin: 50px;
+	font-size: 48px;
+	text-align:center;
 	color: lightgrey;
 	font-family: 'Georgia', serif;
+	color: aliceblue;
 }
 
 h2 {
@@ -237,10 +247,29 @@ h2 {
 	font-weight: lighter;
 }
 
+.subtitle {
+	display:flex;
+	width: 100%;
+	justify-content:center;
+	align-items:center;
+}
+
+.subtitle p {
+	text-align:center;
+	font-size: 16px;
+	font-family: 'Georgia', serif;
+	font-style: italic;
+	color: aliceblue;
+}
+
 p {
 	width: 100%;
 	color: lightgrey;
 	font-family: 'Helvetica', sans-serif;
+}
+
+a {
+	color: orange;
 }
 
 li {
@@ -307,7 +336,8 @@ iframe {
 	}
 	
 	#navdropdown {
-		width:100%;
+		margin: 20px;
+		width:calc(100% - 40px);
 		flex-direction: column;
 	}
 	
@@ -317,8 +347,9 @@ iframe {
 		width: auto;
 	}
 	
-	p a {
+	a {
 		font-size: 24px;
+		
 	}
 	
 	.navlabel {
