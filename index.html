@@ -30,7 +30,7 @@
 		<div id='navdropdown' class='navdropdown' onmouseenter='frameWrapper()' onmouseleave='closeDropDown()'>
 			<div class='column' onmouseenter='bannerSwap("Code")'>
 				<p class='navlabel'>Code<hr></hr><p>
-				<p><a href="#">Unreal Engine</a></p>
+				<p><a href="#" onclick='closeDropDown(), generatePost(unrealJSON)'>Unreal Engine</a></p>
 				<p><a href="#">HTML / CSS</a></p>
 				<p><a href="#">JavaScript</a></p>
 				<p><a href="#">SQL</a></p>
@@ -48,7 +48,7 @@
 				<p><a href="#">Characters</a></p>
 				<p><a href="#">Rigging</a></p>
 				<p><a href="#" onclick='closeDropDown(), generatePost(mocapJSON)'>Motion Capture</a></p>
-				<p><a href="#">Keyframe Animations</a></p>
+				<p><a href="#" onclick='closeDropDown(), generatePost(keyframeJSON)'>Keyframe Animations</a></p>
 			</div> <!-- end column div -->
 		</div><!-- end nav dropdown div-->
 	</header>
@@ -92,7 +92,7 @@
 					<div class='pointerdiv'></div>
 				</div>
 			</div><!-- end contact popup div-->
-			<img onmouseenter='openContact(), frameBio()' onclick='toggleContact()' class='headshot' src='images/Headshot_200x200.jpg' width='150' height='150' alt='My face.'>
+			<img onmouseenter='openContact()' onclick='toggleContact()' class='headshot' src='images/Headshot_200x200.jpg' width='150' height='150' alt='My face.'>
 			<section>
 				<h2>About me:</h2>
 				<p>Hello, my name is Scott! I'm studying to become a web developer at Sacramento City College. Due to a scheduling mistake, this is actually one of the last classes I'll need to take before I can earn my web development certificate, so I already have some experience with this subject. I hope that you can tell by visiting this page. Before web development, I was interested in 3D art and animation. I learned programming for games first, but web development seems like a better field to be in professionally. I hope you enjoy my portfolio page!</p>

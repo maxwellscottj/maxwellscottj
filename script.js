@@ -46,7 +46,6 @@ function generatePost(posts) {
 			for (let i = 0; i < parsedPost.Videos.length; i++) {
 				var newVideo = document.createElement('iframe');
 				newVideo.src = parsedPost.Videos[i].url
-				newImage.alt = parsedPost.Images[i].alt
 				newSection.appendChild(newVideo);
 				if (parsedPost.Videos[i].caption) {
 					var newCaption = document.createElement('p');

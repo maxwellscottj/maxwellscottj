@@ -1,28 +1,71 @@
+let unrealJSON=[
+	{
+		"Title":"Skyknight VR",
+		"TextBody":"Chaos Reigns, later renamed to Skyknight VR, is an abandoned VR game that started off as a student project. We developed some fun mechanics, but the project was too ambitious for the team. As development continued we accrued technical debt and we eventually realized that we were in over our heads.",
+		"Videos": [
+			{
+				"url":"https://www.youtube.com/embed/_qF58MhR_rM",
+				"alt": "A youtube video of Skyknight",
+				"caption":"Skyknight's flight demo."
+			},
+		],
+	}
+]
 let mocapJSON=[
-				{
-					"Title":"Mocap",
-					"TextBody":"Kinect hacks!",
-					"Images": [
-						{
-							"url":"images/rock_texture.jpg",
-							"alt": "A rock texture",
-							"caption":"Kinect rocks!"
-						}
-					],
-					"Videos": [
-						{
-							"url":"https://www.youtube.com/embed/_qF58MhR_rM",
-							"alt": "A rock texture",
-							"caption":"Skyknight's flight demo!"
-						}
-					]
-				},
-				{
-					"Title":"Mocap",
-					"TextBody":"Kinect hacks!",
-					"Images": [
-						{"url":"images/rock_texture.jpg"},
-						{"url":"images/rock_texture.jpg"}
-					]
-				}
-			]
+	{
+		"Title":"Kinect Setup",
+		"TextBody":"I use a dual kinect setup with the two kinects aligned at 90 degree angles.",
+		"Images": [
+			{
+				"url":"images/TestPoke.gif",
+				"alt": "A volumetric recording of the author miming a fencing thrust.",
+				"caption":"Here I am testing my recording setup."
+			}
+		]
+		
+	}
+]
+let keyframeJSON=[
+	{
+		"Title":"Dog Knockbacks",
+		"TextBody":"I created these animation so that players would have more satisfying visual feedback when they landed a solid hit on the dog.",
+		"Images": [
+			{
+				"url":"images/anims/Dog_KnockBack_F.gif",
+				"alt": "An animation of a dog being hit from the front",
+				"caption":"Front Dog Knockback"
+			},
+			{
+				"url":"images/anims/Dog_KnockBack_R.gif",
+				"alt": "An animation of a dog being hit from the right",
+				"caption":"Side Dog Knockback"
+			},
+			{
+				"url":"images/anims/Dog_KnockBack_B.gif",
+				"alt": "An animation of a dog being hit from the rear",
+				"caption":"Rear Dog Knockback"
+			}
+		],
+	},
+	{
+		"Title":"Roach Knockbacks",
+		"TextBody":"Like the animations above, these were made in service of improving visual feedback and game feel for the player's attacks.",
+		"Images": [
+			{
+				"url":"images/anims/Roach_KnockBack_F.gif",
+				"alt": "An animation of a giant roach being hit from the front",
+				"caption":"Front Roach Knockback"
+			},
+			{
+				"url":"images/anims/Roach_KnockBack_R.gif",
+				"alt": "An animation of a giant roach being hit from the right",
+				"caption":"Side Roach Knockback"
+			},
+			{
+				"url":"images/anims/Roach_KnockBack_B.gif",
+				"alt": "An animation of a giant roach being hit from the rear",
+				"caption":"Rear Roach Knockback"
+			}
+		],
+	}
+]

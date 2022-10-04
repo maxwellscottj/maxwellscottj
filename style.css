@@ -59,7 +59,7 @@ nav p:hover {
 	align-self: start;
 	align-items: start;
 	justify-content: center;
-	background-color: rgb(169,169,169,0.67);
+	background-color: dimgrey;
 	margin-bottom: 15px;
 	margin-top:-4px;
 	visibility: hidden;
@@ -84,6 +84,10 @@ nav p:hover {
 .navdropdown .column:hover {
 	background-color: aliceblue;
 	border: none;
+}
+
+.navdropdown .column:hover a{
+	color: cornflowerblue;
 }
 
 .navdropdown hr {
@@ -264,6 +268,7 @@ main.wrapperFrame {
 
 #wrapper {
 	border: 3px solid orange;
+	background-color:dimgrey;
 	border-radius: 30px;
 	width: 75%;
 	margin: 20px;
@@ -282,6 +287,20 @@ main.wrapperFrame {
 
 .scrollBox section {
 	border-radius: 7px;
+	background-color: lightgrey;
+	border-radius:5px;
+}
+
+.scrollBox section p {
+	color: black;
+}
+
+.scrollBox section h2 {
+	color: lightcyan;
+	background-color: dimgrey;
+	border: 3px solid lightcyan;
+	border-radius: 5px;
+	padding: 10px;
 }
 
 .minimized {
@@ -321,7 +340,7 @@ section {
 	border-width: 2px;
 	border-radius: 15px;
 	border-color: lightcyan;
-	background-color: rgba(100, 100, 100, 0.5);
+	background-color: dimgrey;
 	margin: 20px;
 	padding: 20px;
 }
@@ -343,9 +362,9 @@ footer {
 
 h1 {
 	margin: 50px;
-	padding: 30px;
-	padding-left: 80px;
-	padding-right: 80px;
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
 	font-size: 48px;
 	text-align: center;
 	font-family: 'Palatino', serif;
@@ -483,13 +502,15 @@ iframe {
 		width:calc(100% - 40px);
 		flex-direction: column;
 		border:3px solid aliceblue;
-		border-radius: 7px;	
+		border-radius: 7px;
+		
 	}
 	
 	#navdropdown .column {
 		display: block;
 		height: auto;
 		width: auto;
+		
 	}
 	
 	.navdropdown hr {
