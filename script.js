@@ -37,6 +37,7 @@ function generatePost(posts) {
 				newSection.appendChild(newImage);
 				if (parsedPost.Images[i].caption) {
 					var newCaption = document.createElement('p');
+					newCaption.classList.add('caption')
 					newCaption.innerHTML = parsedPost.Images[i].caption;
 					newSection.appendChild(newCaption);
 				}
